@@ -1,0 +1,517 @@
+@import url("./variables.css");
+@import url("./general.css");
+
+/* NAVBAR */
+
+.nav {
+  background-color: var(--white);
+  color: var(--black);
+}
+.nav-2 {
+  display: none;
+}
+
+.nav .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.logo {
+  border: none;
+  background-color: var(--white);
+  padding: 10px 0;
+}
+.logo svg {
+  fill: var(--black);
+  height: 32px;
+  width: 32px;
+}
+
+.options {
+  gap: 5px;
+}
+.nav .i {
+  border: none;
+  background-color: var(--white);
+  padding: 10px 10px;
+}
+
+.nav .i svg {
+  fill: var(--black);
+  height: 18px;
+}
+.nav .options .search-bar {
+  display: none;
+}
+
+/* HEADER */
+
+.header {
+  color: var(--black);
+}
+.hero {
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+}
+.hero .container {
+  flex-direction: column;
+  gap: 20px;
+  padding: 38px 40px;
+}
+.hero span {
+  color: var(--orange);
+  font-weight: bold;
+}
+.hero h1 {
+  font-size: 1.875rem;
+}
+.hero p {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.5px;
+}
+.hero-img {
+  width: 100%;
+}
+.header .features {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+.barra {
+  display: none;
+}
+
+/* EVENT */
+
+.event {
+  color: var(--black);
+  background-color: var(--light);
+  padding: 32px 0;
+}
+.event .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+.event .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event .card img {
+  width: 100%;
+}
+.event .card .card-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event .card .card-text span {
+  color: var(--darkOrange);
+  font-weight: bold;
+}
+
+.event .card .card-text h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+.event .card .card-text button {
+  border: none;
+  background-color: var(--orange);
+  padding: 15px 50px;
+  align-self: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.175rem;
+}
+
+/* MOTORCYCLE */
+
+.moto {
+  color: var(--black);
+  padding: 32px 0;
+}
+.moto h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.moto .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+.moto .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+}
+.moto .card img {
+  width: 100%;
+}
+
+.moto .card h3 {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+/* CAMISETA */
+.camiseta {
+  background-color: var(--light);
+  color: var(--black);
+  padding: 32px 0;
+}
+.camiseta .text {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.camiseta img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.camiseta .text button {
+  border: none;
+  background-color: var(--orange);
+  padding: 15px 50px;
+  align-self: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.175rem;
+}
+
+.camiseta .text a:link,
+.camiseta .text a:visited {
+  text-decoration: none;
+  color: var(--black);
+}
+.camiseta .text a:hover,
+.camiseta .text a:active {
+  color: var(--black);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--black);
+  color: var(--middle-gray);
+  padding: 32px 0;
+}
+.footer .container .text {
+  align-self: center;
+}
+
+.footer .container-btns {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer button {
+  border: none;
+  background-color: var(--black);
+  width: 45px;
+  align-items: center;
+}
+
+.footer button svg {
+  fill: var(--white);
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.footer .text {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+/* UTILITY CLASSES */
+
+.container {
+  margin: auto;
+  padding: 0 15px 0;
+  max-width: 540px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-ligth {
+  border: none;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--white);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+.btn-ligth span {
+  color: var(--white);
+}
+
+.btn-ligth svg {
+  fill: var(--white);
+  width: 20px;
+}
+
+.btn-dark {
+  border: none;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--black);
+  font-size: 1rem;
+}
+.btn-dark span {
+  color: var(--white);
+}
+
+.btn-dark svg {
+  fill: var(--white);
+  width: 20px;
+}
+
+@media (min-width: 576px) {
+  .btn-dark {
+    justify-content: left;
+  }
+  .btn-ligth {
+    width: 50%;
+  }
+  /* HEADER */
+  .header .features {
+    flex-direction: row;
+  }
+  /* EVENT */
+  .event .card button {
+    align-self: flex-start;
+  }
+  /* CAMISETA */
+  .camiseta .text {
+    align-items: flex-start;
+  }
+  .camiseta .text button {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  /* NAVBAR */
+  .nav-1 {
+    display: none;
+  }
+  .nav-2 {
+    display: block;
+  }
+  .nav-options {
+    gap: 10px;
+  }
+  .nav-options .flex {
+    justify-content: start;
+    align-items: center;
+  }
+  .nav-options .flex a:link,
+  .nav-options .flex a:visited {
+    text-decoration: none;
+    color: var(--black);
+    padding: 22px 5px;
+    font-size: 0.9rem;
+  }
+  .nav-options .flex a:hover,
+  .nav-options .flex a:active {
+    color: var(--white);
+    background-color: var(--black);
+  }
+  .nav .i {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  /* HEADER */
+  .hero {
+    width: 50%;
+  }
+  .hero .container {
+    justify-content: center;
+    height: 100%;
+  }
+  .hero-img {
+    width: 50%;
+  }
+  /* EVENT */
+  .event .cards-container {
+    padding: 0 40px;
+  }
+  /* MOTORCYCLES */
+  .moto .cards-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .moto .cards-container {
+    gap: 15px;
+  }
+  .moto .cards-container .card {
+    width: 31%;
+  }
+  /* CAMISETA */
+  .camiseta .container {
+    padding: 0 60px;
+  }
+  /* FOOTER */
+  .footer {
+    padding: 50px 0;
+  }
+  .footer .container-btns {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  /* HEADER */
+  .header .features {
+    gap: 20px;
+  }
+  .header .features button {
+    width: auto;
+  }
+  .barra {
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: var(--middle-gray);
+  }
+  /* EVENT */
+  .event .cards-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .event .cards-container .card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .event .cards-container .reverse {
+    flex-direction: row-reverse;
+  }
+  .event .cards-container .card img {
+    width: 55%;
+    height: 315px;
+  }
+
+  .event .cards-container .card .card-text {
+    width: 42%;
+  }
+  .event .cards-container .card .card-text button {
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* CAMISETA*/
+
+  .camiseta .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+
+  .camiseta .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .camiseta .container img {
+    width: 58%;
+  }
+  .camiseta .container .text {
+    width: 38%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  /* NAVBAR */
+  .nav .options .search-icon {
+    display: none;
+  }
+  .nav .options .search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .options .search-bar label {
+    margin-right: 10px;
+  }
+  .nav .options .search-bar input {
+    min-width: 180px;
+    max-width: 250px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--middle-gray);
+    height: 30px;
+    padding: 0 10px;
+  }
+  /* FOOTER */
+  .footer .reverse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .footer .text {
+    width: 60%;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+  /* HEADER */
+  .hero .container {
+    padding-left: 20rem;
+  }
+  /* CAMISETA */
+  .camiseta .container {
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+}
